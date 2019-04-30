@@ -1,4 +1,3 @@
-require "pry"
 def get_first_name_of_season_winner(data, season)
   data[season].each do |info|
     if info[:status] = "Winner"
@@ -44,18 +43,18 @@ end
 
 
 def get_average_age_for_season(data, season)
- age_total = 0
- number_of_contestants = 0
+  age_total = 0
+  number_of_contestants = 0
   data[season].each do |contestants|
     contestants.each do |key, value|
       if key == "age"
         number_of_contestants += 1
-    age_total = age_total + value.to_f
-end
-end
-end
-avg_age = (age_total/number_of_contestants).round
-return avg_age
+        age_total = age_total + value.to_f
+      end
+    end
+  end
+  avg_age = (age_total/number_of_contestants).round
+  return avg_age
 end
 
 
