@@ -56,19 +56,3 @@ def get_average_age_for_season(data, season)
   avg_age = (age_total/number_of_contestants).round
   return avg_age
 end
-
-
-
-  #     contestants.each do |contestant|
-  #       age_array << contestant[:age].to_f
-  #   end
-  #   ages = 0
-  #   age_array.each do |i|
-  #     ages += i
-  #   end
-  #
-  #   ages
-  #   ages_2 = age_array.length
-  #   age_avg = ages / ages_2
-  #   return age_avg
-  # end
